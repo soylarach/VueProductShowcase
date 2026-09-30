@@ -1,4 +1,5 @@
 import { mount } from '@vue/test-utils'
+import ElementPlus from 'element-plus'
 import ProductCard from '@/components/ProductCard.vue'
 import { createStore } from 'vuex'
 
@@ -28,7 +29,7 @@ describe('ProductCard.vue', () => {
     const wrapper = mount(ProductCard, {
       props: producto,
       global: {
-        plugins: [store]
+        plugins: [store, ElementPlus]
       }
     })
     expect(wrapper.text()).toMatch(producto.nombre)

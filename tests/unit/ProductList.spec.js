@@ -1,4 +1,5 @@
 import { mount } from '@vue/test-utils'
+import ElementPlus from 'element-plus'
 import ProductList from '@/components/ProductList.vue'
 import store from '@/store/store'
 
@@ -14,7 +15,7 @@ describe('ProductList.vue', () => {
     const wrapper = mount(ProductList, {
       props: {},
       global: {
-        plugins: [store]
+        plugins: [store, ElementPlus]
       }
     })
     expect(wrapper.text()).toMatch(productos[0].nombre)
@@ -30,7 +31,7 @@ describe('ProductList.vue', () => {
     const wrapper = mount(ProductList, {
       props: {},
       global: {
-        plugins: [store]
+        plugins: [store, ElementPlus]
       }
     })
     expect(wrapper.text()).toMatch(mensajeError)
