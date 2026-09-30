@@ -33,7 +33,7 @@ const store = useStore()
 </script>
 
 <template>
-  <article>
+  <article data-cy="product-card">
     <!-- <img :src="imagen" :alt="nombre" /> -->
     <h3>{{ nombre }}</h3>
     <p>${{ precio }}</p>
@@ -44,6 +44,6 @@ const store = useStore()
      @click="store.commit('agregarFavorito', id)">
       Agregar a favoritos
     </button>
-    <p>{{ categoria }}</p>
+    <p data-cy="product-card-category">{{ categoria }}</p>
   </article>
 </template>

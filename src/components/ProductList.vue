@@ -1,8 +1,8 @@
 <template>
 
-  <select @change="alCambiarCategoria">
-    <option value="">Todas las categorías</option>
-    <option v-for="categoria in categorias" :key="categoria" :value="categoria">
+  <select @change="alCambiarCategoria" data-cy="category-filter">
+    <option value="" data-cy="product-category">Todas las categorías</option>
+    <option v-for="categoria in categorias" :key="categoria" :value="categoria" data-cy="product-category">
       {{ categoria }}
     </option>
   </select>

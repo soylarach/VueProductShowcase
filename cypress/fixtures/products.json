@@ -1,0 +1,30 @@
+[
+  {
+      "id": 1,
+      "nombre": "Product 1",
+      "precio": 34000,
+      "categoria": "electronica",
+      "imagen": "http://localhost:8080/public/images/product1.jpg"
+    },
+    {
+      "id": 2,
+      "nombre": "Product 2",
+      "precio": 2990,
+      "categoria": "libros",
+      "imagen": "http://localhost:8080/public/images/product2.jpg"
+    },
+    {
+      "id": 3,
+      "nombre": "Product 3",
+      "precio": 5990,
+      "categoria": "ropa",
+      "imagen": "http://localhost:8080/public/images/product3.jpg"
+    },
+    {
+      "id": 4,
+      "nombre": "Product 4",
+      "precio": 6990,
+      "categoria": "ropa",
+      "imagen": "http://localhost:8080/public/images/product4.jpg"
+    }
+]
